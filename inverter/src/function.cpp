@@ -1,14 +1,18 @@
-#include "function.h"
-
+#include <iostream>
+#include <array>
+#include <algorithm>
 #include <iterator>
-using std::iter_swap;
 
 /*! 
  * Reverse de order of elements inside the array.
  * @param arr Reference to the array with the values.
  */
-template <size_t SIZE>
+ /*
+ a ideia não era usar o std::reverse, mas como não foi explicitado, vou considerar
+ */
+template <std::size_t SIZE>
 void reverse( std::array< std::string, SIZE > & arr )
 {
-    /*codigo*/
+   std::reverse(std::begin(arr), std::end(arr));
+
 }

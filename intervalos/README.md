@@ -4,8 +4,10 @@ Escreva um programa em C++ que lê um número não conhecido de valores inteiros
 e fora desses intervalos. Para ler um número indeterminado de valores basta incluir o comando de extração associado ao `std::cin` como condição de parada em um laço (ver abaixo).
 ```c++
 int x;
+
 while( cin >> std::ws >> x) {
-  // realização da contagem em relação aos intervalos
+  
+  
 }
 ```
 Após encerrada a entrada de dados, o programa deve imprimir a **porcentagem** de números para cada um dos quatro intervalos e de números fora deles, nessa ordem, um por linha 

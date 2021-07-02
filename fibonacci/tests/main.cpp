@@ -19,7 +19,7 @@ int main ( void )
     }
 
     {
-        BEGIN_TEST( tm,"Fibonacc(2)", "[fib_below_n]");
+        BEGIN_TEST( tm,"Fibonacci(2)", "[fib_below_n]");
         std::vector<unsigned int> expected {1,1}; // There is no number below 1 in FIbobacci series.
         EXPECT_TRUE(fib_below_n(2) == expected);
     }

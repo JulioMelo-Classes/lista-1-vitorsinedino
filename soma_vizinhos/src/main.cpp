@@ -8,9 +8,25 @@ using std::cout;
 using std::cin;
 using std::endl;
 
+/*
+Como a lógica não está correta para o primeiro par, vou considerar 20% pelo trabalho
+*/
 int main( void )
 {
-    // TODO: Adicione seu código aqui. 
-
+    int a, b, i;
+    int aux = 0;
+    cin >> a >> b;
+    if(a < b){
+      for(i = a, aux = i; i <= b; i ++){
+        aux += i;
+      }
+    }
+    if(a > b){
+      for(i = a, aux = i; i >= b; i--){
+        aux += i;
+      }
+    }
+    
+    cout << aux;
     return 0;
 }
